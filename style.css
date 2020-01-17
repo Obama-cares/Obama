@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-h1 {
-  color: blue;
-  font-family: verdana;
-  font-size: 300%;
-}
-p  {
-  color: red;
-  font-family: courier;
-  font-size: 160%;
-}
-</style>
-</head>
 <body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
+.header { /*for index.html*/
+  display: grid;
+  background-color:red;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+.nav { /*for index.html*/
+  display: grid;
+  background-color:green;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+.body { /*for index.html*/
+  display: grid;
+  background-color:blue;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+.footer { /*for index.html*/
+  display: grid;
+  background-color:yellow;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
 </body>
 </html>
