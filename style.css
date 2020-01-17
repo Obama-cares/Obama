@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns: 25% auto;
@@ -26,5 +23,3 @@
     grid-area:header;
     }
 
-</body>
-</html>
