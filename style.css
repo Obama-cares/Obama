@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-.header { /*for index.html*/
+.container1 { /*for index.html*/
   display: grid;
-  background-color:red;
   grid-template-columns: 25% auto;
   grid-template-areas:
     "header header"
     "nav main"
     "footer footer";
     }
-.nav { /*for index.html*/
-  display: grid;
-  background-color:green;
-  grid-template-columns: 25% auto;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+.header {
+    background-color:red;
+    grid-area:header;
     }
-.body { /*for index.html*/
-  display: grid;
-  background-color:blue;
-  grid-template-columns: 25% auto;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+.body {
+    background-color:blue;
+    grid-area:header;
     }
-.footer { /*for index.html*/
-  display: grid;
-  background-color:yellow;
-  grid-template-columns: 25% auto;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+.nav {
+    background-color:green;
+    grid-area:header;
+    }
+.footer {
+    background-color:yellow;
+    grid-area:header;
     }
 </body>
 </html>
