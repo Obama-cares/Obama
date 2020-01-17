@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-.container1 { /*for index.html*/
-  display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
-    }
 .header {
     background-color:red;
     grid-area:header;
@@ -24,6 +16,14 @@
 .footer {
     background-color:yellow;
     grid-area:header;
+    }
+.container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
     }
 </body>
 </html>
