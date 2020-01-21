@@ -22,12 +22,11 @@ main {
     grid-area:header;
     }
 .nav {
-  background:rgba(0,0,0,.2);
-    background-color:green;
+  background-color:rgba(0,0,0,.2);
     grid-area:header;
     }
 .footer {
-    background:rgba(0,0,0,.2);
+    background-color:rgba(0,0,0,.2);
     grid-area:header;
     }
 
