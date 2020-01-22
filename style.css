@@ -15,6 +15,10 @@
   background-color:rgba(0,0,0,.2);
     }
 
+h1 {
+  text-shadow: 2px 2px 5px navy;
+}
+
 .main {
   background:rgba(0,0,0,0.2);
   text-shadow: 2px 2px 5px navy;
