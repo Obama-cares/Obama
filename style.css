@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns:auto 1fr;
   grid-gap:.5em;
+  grid-
   margin:1%;
   grid-template-areas:
     "header header"
@@ -15,24 +16,26 @@
     }
 
 .main {
-      background: linear-gradient(to right, lightgreen, teal);
+  background:rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 5px navy;
+  grid-area:main;
   padding:5px;
   
 }
 
 .body {
     background: linear-gradient(to right, lightgreen, teal);
-    grid-area:header;
+    grid-area:body;
   font-family:Verodana;
     }
 
 .nav {
   background-color:rgba(0,0,0,.2);
-    grid-area:header;
+    grid-area:nav;
     }
 
 .footer {
     background-color:rgba(0,0,0,.2);
-    grid-area:header;
+    grid-area:footer;
     }
 
