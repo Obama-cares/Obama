@@ -30,8 +30,12 @@ h1 {
 .body {
     background: linear-gradient(to right, lightgreen, teal);
     grid-area:body;
-  font-family:Verodana;
+  font-family:Verdana;
     }
+
+p {
+  color:white;
+}
 
 .nav {
   background-color:rgba(0,0,0,.2);
