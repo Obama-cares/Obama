@@ -27,8 +27,8 @@ h1 {
   
 }
 
-.body {
-    background-color: linear-gradient(to right, lightgreen, teal);
+body {
+    background: linear-gradient(to right, lightgreen, teal);
     grid-area:body;
   font-family:Verdana;
     }
