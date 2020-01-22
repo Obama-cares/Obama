@@ -10,7 +10,7 @@
     "footer footer";
     }
 
-.header {
+header {
     grid-area:header;
   background-color:rgba(0,0,0,.2);
     }
@@ -19,7 +19,7 @@ h1 {
   text-shadow: 2px 2px 5px navy;
 }
 
-.main {
+main {
   background-color:rgba(0,0,0,0.2);
   text-shadow: 2px 2px 5px navy;
   grid-area:main;
@@ -37,7 +37,7 @@ p {
   color:white;
 }
 
-.nav {
+nav {
   background-color:rgba(0,0,0,0.2);
     grid-area:nav;
     }
