@@ -27,7 +27,6 @@ h3 {
 
 main {
   background-color:rgba(0,0,0,0.2);
-  text-shadow: 2px 2px 5px navy;
   grid-area:main;
   padding:5px;
 }
@@ -38,7 +37,7 @@ body {
   font-family:Verdana;
     }
 
-p {
+main p {
   color:white;
 }
 
