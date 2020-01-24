@@ -28,6 +28,7 @@ main {
   background-color:rgba(0,0,0,0.2);
   grid-area:main;
   padding:5px;
+  color:white;
 }
 
 body {
