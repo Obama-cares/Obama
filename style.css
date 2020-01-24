@@ -13,7 +13,7 @@
 header {
   text-align:center;
     grid-area:header;
-      background-color: linear-gradient(to right, lightgreen, teal);
+      background-color:rgba(0,0,0,0.2);
     }
 
 h1 {
