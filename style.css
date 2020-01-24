@@ -43,7 +43,6 @@ main p {
 
 nav {
     grid-area:nav;
-  text-shadow:2px 2px 5px navy;
   background-color:rgba(0,0,0,.2);
     }
 
