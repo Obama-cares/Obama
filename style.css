@@ -44,6 +44,7 @@ main p {
 
 nav {
     grid-area:nav;
+  background:rgba(0,0,0,.2);
     }
 
 nav a {
