@@ -22,7 +22,6 @@ h1 {
 
 h3 {
   color:navy;
-  text-align:center;
 }
 
 main {
@@ -46,6 +45,15 @@ nav {
     grid-area:nav;
   background-color:rgba(0,0,0,.2);
     }
+
+nav a {
+    text-decoration:none;
+    color:navy;
+}
+
+a:hover {
+    color:white;
+}
 
 footer {
   text-align:center;
