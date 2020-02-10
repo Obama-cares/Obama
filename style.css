@@ -1,79 +1,99 @@
-.container1 { /*for index.html*/
-  display: grid;
-  grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
-    }
-
-header {
-  text-align:center;
-    grid-area:header;
-      background-color:rgba(0,0,0,0.2);
-    }
-
-h1 {
-  text-shadow: 2px 2px 5px navy;
-  color:mediumspringgreen; 
-}
-
-h3 {
-  color:navy;
-  text-align:center;
-}
-
-main {
-  background-color:rgba(0,0,0,0.2);
-  grid-area:main;
-  padding:5px;
-  color:white;
+img {
+  max-width:100%;
 }
 
 body {
-    background: linear-gradient(to right, lightgreen, teal);
-    grid-area:body;
-  font-family:Verdana;
-    }
+  font-family: Verdana;
+  background: linear-gradient(to right, lightgreen, teal);
+  margin:0;
+}
+    
+header {
+  grid-area:header;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  text-align:center;
+ }
 
-main p {
-  color:white;
+header h1 {
+  font-size:5vw;
+  color:mediumspringgreen;
+  font-family:Impact;
+  text-shadow: 2px 2px 5px navy;
+  margin: 0;
+}
+
+header h3 {
+  font-size:2vw;
+  color:navy;
+  margin:0;
 }
 
 nav {
-    grid-area:nav;
+  grid-area:nav;
   background:rgba(0,0,0,.2);
-    }
-
-nav a {
-    text-decoration:none;
-    color:navy;
 }
-
-a:hover {
-    color:white;
+    
+nav ul {
+  padding:10px;
+  margin:0;
 }
 
 nav li {
-    padding:10px 10px;
-    list-style-type:none;
-    font-size:1.5em;
-    font-weight:bold;
+  padding:10px 10px;
+  list-style-type:none;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+nav a {
+  text-decoration:none;
   color:navy;
 }
 
-nav ul {
-   padding:10px;
-   margin:0;
+a:hover {
+  color:white;
 }
 
+main {
+  grid-area:main;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+}
+
+main h2 {
+  text-align:center;
+  color:navy;
+  margin:1%;
+}
+
+main p {
+  color:white;
+  padding:1% 2%;
+  font-size:1em;
+}
 
 footer {
+  grid-area:footer;
+  background:rgba(0,0,0,.2);
+  padding:5px;
   text-align:center;
-  color:white;
-    background-color:rgba(0,0,0,.2);
-    grid-area:footer;
-    }
+}
 
+footer p {
+  font-size:1em;
+  color:white;
+  margin:0;
+}
+
+.container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns:?;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "?"
+    "?"
+    "?"
+    "?";   
+    }
