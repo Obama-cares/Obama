@@ -84,10 +84,12 @@ aside h2 {
   
 }
 aside li {
-  
+  color:navy
 }
 aside a{
-  
+  color:white
+	  padding:10px 0;
+
 }
 aside a:hover {
   
