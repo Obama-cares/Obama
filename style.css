@@ -108,7 +108,7 @@ footer p {
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
-  grid-template-columns:5;
+  grid-template-columns:2 4;
   grid-gap:.5em;
   margin:1%;
   grid-template-areas:
