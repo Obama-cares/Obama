@@ -92,7 +92,13 @@ aside a{
 
 }
 aside a:hover {
-  
+	white
+}
+
+top {
+	  grid-area:top;
+  background:rgba(0,0,0,.2);
+	padding:5px;
 }
 
 footer {
