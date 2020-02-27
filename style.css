@@ -1,104 +1,16 @@
-img {
-  max-width:100%;
-}
-
-body {
-  font-family: Verdana;
-  background: linear-gradient(to right, lightgreen, teal);
-  margin:0;
-}
-    
-header {
-  grid-area:header;
-  background:rgba(0,0,0,.2);
-  padding:5px;
-  text-align:center;
- }
-
-header h1 {
-  font-size:5vw;
-  color:mediumspringgreen;
-  font-family:Impact;
-  text-shadow: 2px 2px 5px navy;
-  margin: 0;
-}
-
-header h3 {
-  font-size:2vw;
-  color:navy;
-  margin:0;
-}
-
-nav {
-  grid-area:nav;
-  background:rgba(0,0,0,.2);
-}
-    
-nav ul {
-  padding:10px;
-  margin:0;
-}
-
-nav li {
-  padding:10px 10px;
-  list-style-type:none;
-  font-size:1.5em;
-  font-weight:bold;
-}
-
-nav a {
-  text-decoration:none;
-  color:navy;
-}
-
-a:hover {
-  color:white;
-}
-
-main {
-  grid-area:main;
-  background:rgba(0,0,0,.2);
-  padding:5px;
-}
-
-main h2 {
-  text-align:center;
-  color:navy;
-  margin:1%;
-}
-
-main p {
-  color:white;
-  padding:1% 2%;
-  font-size:1em;
-}
-
-aside {
-  grid-area:aside;
-  background:rgba(0,0,0,.2);
-  padding:5px;
-  text-align:center;
-}
-
 aside h2 {
   
 }
 aside li {
-  color:navy
+  
 }
-aside a{
-  color:white
-	  padding:10px 0;
 
+aside a{
+  color:navy;
 }
 aside a:hover {
-	white
-}
-
-top {
-	  grid-area:top;
-  background:rgba(0,0,0,.2);
-	padding:5px;
+  color:white;
+  padding:10px 0;
 }
 
 footer {
@@ -113,18 +25,65 @@ footer p {
   color:white;
   margin:0;
 }
+
+h2 {
+  color:navy;
+  text-align:center;
+}
+
+p {
+  color:white;
+  text-align:left;
+}
+
+.top {
+  grid-area:top;
+}
+
+.middle {
+  grid-area:middle;
+}
+
+.bottom {
+  grid-area:bottom;
+}
+
+article {
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  text-align:center;
+  
+}
+
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
-  grid-template-columns:2 4;
+  grid-template-columns:1fr;
   grid-gap:.5em;
   margin:1%;
   grid-template-areas:
-    "header header header"
-    "nav nav"
-    "main main aside"
-    "footer footer footer";
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
     }
+    
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+    }
+    
 
 /*This stuff is for the hamburger menu*/
 .toggleNav {
@@ -156,14 +115,27 @@ footer p {
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
 .container1 { /*for index.html*/
-  grid-template-columns:2 4;
+  grid-template-columns:auto 1fr;
   grid-template-areas:
-    "Header Header"
-    "Nav Main"
-    "Aside Aside"
-    "Footer Footer";
+    "header header"
+    "nav main"
+    "aside aside"
+    "footer footer";
     }
 
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav top"
+    "main"
+    "middle"
+    "bottom"
+    "footer";
+    }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -195,4 +167,15 @@ footer p {
     }
 	
 
-	}
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5f 3fr;
+  grid-gap:.5em;
+  margin:auto;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
+    "footer footer footer";
+    }
