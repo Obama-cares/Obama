@@ -29,6 +29,12 @@ header h3 {
   margin:0;
 }
 
+h3 {
+  font-size:1.5vw;
+  color:navy;
+  text-align:center;
+}
+
 nav {
   grid-area:nav;
   background:rgba(0,0,0,.2);
@@ -59,7 +65,7 @@ main {
   grid-area:main;
   background:rgba(0,0,0,.2);
   padding:5px;
-  width:550px;
+  width:1315px;
 }
 
 .travelpic {
@@ -113,6 +119,7 @@ footer p {
   font-size:1em;
   color:white;
   margin:0;
+  text-align:center;
 }
 
 h2 {
@@ -144,6 +151,29 @@ article {
   
 }
 
+figure {
+  margin:0;
+  text-align:center;
+}
+
+figcaption {
+  padding:5px;
+  color:navy;
+  font-weight:bold;
+}
+
+figure img {
+  padding-top:10px;
+}
+
+.nestedgrid {
+display:grid;
+}
+
+fig 1 {
+  
+}
+
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -171,6 +201,19 @@ article {
     "middle"
     "bottom"
     "footer";
+    }
+    
+    .container3 {/*for special.html*/
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:.5em;
+    margin:1%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    ".fig2"
+    "footer"
     }
     
 
@@ -225,6 +268,25 @@ article {
     "bottom"
     "footer";
     }
+    
+.container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    ".fig2 fig2"
+    "footer footer";
+    
+    .nestedgrid:
+      display:grid;
+      grid-template-columns:100%;
+      grid-emplate-areas:
+      "section"
+      "fig1";
+    }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -267,4 +329,24 @@ article {
     "nav main middle"
     "nav main bottom"
     "footer footer footer";
+    }
+
+.container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+}
+  
+    .nestedgrid:
+      display:grid;
+      grid-template-columns:100%;
+      grid-emplate-areas:
+      "section"
+      "fig1";
     }
