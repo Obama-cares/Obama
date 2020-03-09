@@ -170,8 +170,13 @@ figure img {
 display:grid;
 }
 
-fig 1 {
+.fig1 {
   
+}
+
+.audio, .video {
+ max-width: 100%;
+ height:auto;
 }
 
 /*---------------------------Mobile Layout Styles----------------------------*/
@@ -350,3 +355,4 @@ fig 1 {
       "section"
       "fig1";
     }
+
