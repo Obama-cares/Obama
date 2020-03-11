@@ -171,13 +171,14 @@ display:grid;
 }
 
 .fig1 {
-  
 }
 
 .audio, .video {
  max-width: 100%;
  height:auto;
+ justify-content:;
 }
+
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -355,4 +356,5 @@ display:grid;
       "section"
       "fig1";
     }
+
 
