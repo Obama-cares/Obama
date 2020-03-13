@@ -179,6 +179,51 @@ display:grid;
  justify-content:;
 }
 
+.phone {
+  text-align:center;
+  background-color:navy;
+  
+}
+
+.call {
+  text-align:center;
+  background-color:darkseagreen;
+  width:600px;
+}
+
+	.form {
+	  background-color:darkseagreen;
+	  width:90%;
+	  margin:auto;
+	  color:white;
+	  padding:10px;
+	}
+	
+	.formcontainer2{
+	    width:90%;
+	    grid-template-columns:2fr 1fr;
+  grid-template-areas:
+    "div5 div6"
+}
+	
+	.input {
+	  margin: 1px 0 10px 0;
+	}
+
+.button {
+  padding:5px;
+  background-color:navy;
+  color:lightseagreen;
+}
+
+.container1 { /*for index.html*/
+  grid-template-columns: auto 1fr 25%;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    }
+
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
