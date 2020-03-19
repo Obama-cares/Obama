@@ -30,8 +30,13 @@ header h3 {
 }
 
 h3 {
-  font-size:1.5vw;
   color:navy;
+  text-align:center;
+}
+
+h4 {
+  font-size:2em;
+  color:darkseagreen;
   text-align:center;
 }
 
@@ -173,10 +178,30 @@ display:grid;
 .fig1 {
 }
 
+.nestedgrid2 { /*for contact.html*/
+  display: grid;
+  grid-template-columns:auto 2fr;
+  grid-template-rows:3fr;
+  grid-gap:.5em;
+  form-width:90%:
+  margin:auto;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "call call"
+    "footer footer";
+}
+  
+width:1fr;
+}
+
 .audio, .video {
  max-width: 100%;
  height:auto;
- justify-content:;
+}
+
+.iframe {
+  text-align:center;
 }
 
 .phone {
@@ -190,40 +215,6 @@ display:grid;
   background-color:darkseagreen;
   width:600px;
 }
-
-	.form {
-	  background-color:darkseagreen;
-	  width:90%;
-	  margin:auto;
-	  color:white;
-	  padding:10px;
-	}
-	
-	.formcontainer2{
-	    width:90%;
-	    grid-template-columns:2fr 1fr;
-  grid-template-areas:
-    "div5 div6"
-}
-	
-	.input {
-	  margin: 1px 0 10px 0;
-	}
-
-.button {
-  padding:5px;
-  background-color:navy;
-  color:lightseagreen;
-}
-
-.container1 { /*for index.html*/
-  grid-template-columns: auto 1fr 25%;
-  grid-template-areas:
-    "header header header"
-    "nav main aside"
-    "footer footer footer";
-    }
-
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -355,7 +346,23 @@ display:grid;
     padding-top:10px;
   }
 
+	form {
+	  background-color:darkseagreen;
+	  width:90%;
+	  margin:auto;
+	  color:white;
+	  padding:10px;
 	}
+	
+	input {
+	  margin: 1px 0 10px 0;
+	}
+
+.button {
+  padding:5px;
+  background-color:navy;
+  color:lightseagreen;
+}
 
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
@@ -367,6 +374,14 @@ display:grid;
     "nav main aside"
     "footer footer footer";
     }
+    
+    
+    .nestedgrid2 {
+grid-template: auto 1fr;
+grid-template-columns: 2fr 3fr;
+grid-template-asreas:
+""
+}
 	
 
 .container2 { /*for blog.html*/
@@ -401,5 +416,4 @@ display:grid;
       "section"
       "fig1";
     }
-
 
