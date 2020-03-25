@@ -412,7 +412,7 @@ grid-template-asreas:
     .nestedgrid:
       display:grid;
       grid-template-columns:100%;
-      grid-emplate-areas:
+      grid-template-areas:
       "section"
       "fig1";
     }
