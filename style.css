@@ -32,7 +32,7 @@ header h3 {
 h3 {
   color:navy;
   text-align:center;
-font-size:2vw;
+  font-size:2vw;
 }
 
 h4 {
@@ -181,20 +181,25 @@ display:grid;
 
 .nestedgrid2 { /*for contact.html*/
   display: grid;
-  grid-template-columns:auto 2fr;
+  grid-template-columns:auto 3fr;
   grid-template-rows:3fr;
   grid-gap:.5em;
   form-width:90%:
   margin:auto;
   grid-template-areas:
-    "header header"
-    "nav main"
-    "call call"
-    "footer footer";
+    "header header header"
+    "nav div1 div2"
+    "call call call"
+    "footer footer footer";
 }
   
-width:1fr;
-}
+  .div1 {
+    float:left;
+  }
+  
+  .div2 {
+    float:right;
+  }
 
 .audio, .video {
  max-width: 100%;
@@ -208,6 +213,8 @@ width:1fr;
 .phone {
   text-align:center;
   background-color:navy;
+  
+  float:center;
   
 }
 
@@ -350,6 +357,7 @@ width:1fr;
 	form {
 	  background-color:darkseagreen;
 	  width:90%;
+	  height:300px;
 	  margin:auto;
 	  color:white;
 	  padding:10px;
@@ -413,7 +421,7 @@ grid-template-asreas:
     .nestedgrid:
       display:grid;
       grid-template-columns:100%;
-      grid-template-areas:
+      grid-emplate-areas:
       "section"
       "fig1";
     }
