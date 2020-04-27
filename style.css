@@ -195,10 +195,12 @@ display:grid;
   
   .div1 {
     float:left;
+	  background-color:navy;
   }
   
   .div2 {
     float:right;
+	  background-color:navy;
   }
 
 .audio, .video {
