@@ -339,6 +339,14 @@ display:grid;
       "section"
       "fig1";
     }
+	
+	.nestedgrid3 {
+display: grid;
+grid-gap:.5em;
+justify-items:center;
+align-items:end;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
 
 /* Below will change from hamburger menu to side navigation*/
   
